@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Estate</title>
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/css/intlTelInput.min.css"
+      integrity="sha256-xpVuhxDPR39wFEQDha4W7kuMx+z9Av3dTS8MbH/RWEU="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/flags.css" />
   </head>
 
   <body>
@@ -119,5 +127,44 @@
         />
       </div>
     </section>
+    <section class="booking-section">
+      <h2>Book a real estate expert from your phone</h2>
+      <h3>Enter your mobile number to get the professionals help</h3>
+      <div class="booking-section__container">
+        <input
+          id="booking-section__container-input"
+          class="booking-section__container-input"
+          type="number"
+        />
+        <button class="booking-section__container-button">Send</button>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/js/utils.js"
+      integrity="sha256-DSmQ+B1pgYHusXr29ycsM6+z1dHCr2HL3xYH/LgujI4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/js/intlTelInput.min.js"
+      integrity="sha256-uPbemOnf3P4eaeLHebLwPC71YRbu3WNBvO4ibYeBnGs="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var input = document.querySelector("#booking-section__container-input");
+        window.intlTelInput(input, {
+          customPlaceholder: function (
+            selectedCountryPlaceholder,
+            selectedCountryData
+          ) {
+            return "";
+          },
+          initialCountry: "fr",
+          separateDialCode: true,
+        });
+      });
+    </script>
   </body>
 </html>

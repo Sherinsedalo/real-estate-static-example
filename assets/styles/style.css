@@ -193,3 +193,65 @@ body {
   width: 30%;
   margin-left: 190px;
 }
+
+.booking-section {
+  margin-top: 90px;
+  margin-left: 40px;
+  margin-right: 55px;
+  background: #fff5da;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.booking-section h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #323232;
+}
+
+.booking-section h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #646464;
+}
+
+.booking-section__container {
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.booking-section__container-input {
+  border: none;
+  height: 60px;
+  background: transparent;
+  display: flex;
+  flex: 1;
+  min-width: 300px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.booking-section__container-button {
+  background: #ffc839;
+  border: 1px solid black;
+  height: 60px;
+  width: 150px;
+  margin: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  cursor: pointer;
+}
