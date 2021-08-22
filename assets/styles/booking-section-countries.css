@@ -1,0 +1,12 @@
+.iti__flag {
+  background-image: url("https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.13/build/img/flags@2x.png");
+  }
+}
+.iti--separate-dial-code .iti__selected-flag {
+  background: transparent;
+}
