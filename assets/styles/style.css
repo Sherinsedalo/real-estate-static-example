@@ -9,7 +9,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative; */
 }
 
 .search-section__main-content {
@@ -254,4 +253,15 @@ body {
   font-size: 20px;
   font-style: normal;
   cursor: pointer;
+}
+
+.inspiration-section {
+  margin: 40px;
+}
+
+.inspiration-section h2 {
+  font-family: "nunito" sans-serif;
+  font-weight: 600;
+  color: #323232;
+  font-size: 36px;
 }
