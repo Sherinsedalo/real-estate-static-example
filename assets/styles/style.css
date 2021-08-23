@@ -165,10 +165,10 @@ body {
 
 .why-section__description {
   width: 50%;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 40px;
 }
 .why-section__description h2 {
   font-family: "Nunito", sans-serif;
@@ -233,7 +233,7 @@ body {
 
 .booking-section__container-input {
   border: none;
-  height: 60px;
+  height: 40px;
   background: transparent;
   display: flex;
   flex: 1;
@@ -250,13 +250,23 @@ body {
   width: 150px;
   margin: 10px;
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   cursor: pointer;
 }
 
 .inspiration-section {
   margin: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.inspiration-section__first-part {
+  display: flex;
+  flex-direction: column;
 }
 
 .inspiration-section h2 {
@@ -264,4 +274,65 @@ body {
   font-weight: 600;
   color: #323232;
   font-size: 36px;
+}
+.inspiration-section__first-part__top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.inspiration-section__first-part__bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.inspiration-section__second-part {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 70px;
+}
+.inspiration-section__second-part h2 {
+  font-family: "nunito" sans-serif;
+  font-weight: 600;
+  color: #323232;
+  font-size: 36px;
+}
+.inspiration-section__second-part__description {
+  width: 50%;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #606060;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background-color: #ffc839;
+  border-radius: 5px;
+  border: 0;
+  color: black;
+  font-family: "nunito" sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 23px;
+  padding: 20px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.inspiration-section__second-part__imgs {
+  margin-left: 190px;
+  margin-top: 95px;
 }
